@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mot de bienvenue - BANK OF AFRICA</title>
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f7f6; 
+}
+
+
+header{
+background:linear-gradient(135deg,#006b4f,#00945f);
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+header h1{
+font-size:42px;
+}
+
+header p{
+font-size:18px;
+margin-top:10px;
+opacity:0.9;
+}
+
+
+#typing{
+font-size:20px;
+margin-top:15px;
+font-weight:bold;
+}
+
+
+.container{
+max-width:1000px;
+margin:50px auto;
+padding:0 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+border-left:5px solid #00945f;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h2{
+color:#006b4f;
+margin-bottom:10px;
+}
+
+.card p{
+color:#555;
+line-height:1.6;
+}
+
+
+.icon{
+font-size:30px;
+margin-bottom:10px;
+}
+
+
+.btn{
+display:inline-block;
+margin-top:10px;
+padding:12px 20px;
+background:#003b7a;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0059b3;
+}
+
+
+.retour{
+text-align:center;
+margin:40px 0;
+}
+
+.retour a{
+display:inline-block;
+padding:14px 30px;
+background:linear-gradient(135deg,#00945f,#006b4f);
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.retour a:hover{
+transform:scale(1.05);
+}
+
+
+footer{
+text-align:center;
+background:#284f46;
+color:white;
+padding:25px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Bienvenue chez BANK OF AFRICA</h1>
+<p>Votre partenaire financier de confiance</p>
+
+<div id="typing"></div>
+
+</header>
+
+
+<div class="container">
+
+<div class="card">
+<div class="icon"></div>
+<h2>Notre mission</h2>
+<p>Vous accompagner dans la gestion de vos finances avec securite et confiance.</p>
+</div>
+
+<div class="card">
+<div class="icon"></div>
+<h2>Securite totale</h2>
+<p>Vos comptes sont proteges avec des technologies modernes.</p>
+</div>
+
+<div class="card">
+<div class="icon"> </div>
+<h2>Rapidite</h2>
+<p>Des operations rapides et simples en quelques secondes.</p>
+</div>
+
+<div class="card">
+<div class="icon"> </div>
+<h2>Presence</h2>
+<p>BANK OF AFRICA est presente dans plusieurs pays africains.</p>
+</div>
+
+<div class="card">
+<div class="icon"> </div>
+<h2>Services</h2>
+<p>Comptes, credits, epargne et transferts internationaux.</p>
+
+<a href="services.html" class="btn">Voir les services</a>
+</div>
+
+<div class="card">
+<div class="icon"> </div>
+<h2>Contact</h2>
+<p>Notre equipe est disponible 24h/24.</p>
+
+<a href="contacts.html" class="btn">Nous contacter</a>
+</div>
+
+</div>
+
+
+<div class="retour">
+    <a href="Bank.html">⬅ Retour à l'accueil</a>
+</div>
+
+
+<footer>
+© 2026 BANK OF AFRICA - Tous droits réservés
+</footer>
+
+<script>
+
+const text = "Construire votre avenir financier commence ici,en toute sécuritè...";
+let i = 0;
+
+function typeWriter(){
+if(i < text.length){
+document.getElementById("typing").innerHTML += text.charAt(i);
+i++;
+setTimeout(typeWriter, 60);
+}
+}
+
+typeWriter();
+
+</script>
+
+</body>
+</html>
