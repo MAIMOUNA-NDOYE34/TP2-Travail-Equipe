@@ -1,1 +1,1 @@
-{ "type": "FeatureCollection", "features": [] }
+{ "type": "FeatureCollection", "features": [{ "type": "Feature", "properties": { "nom": "Ecole 1" }, "geometry": null }] }
