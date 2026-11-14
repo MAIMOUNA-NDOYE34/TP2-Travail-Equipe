@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services - BANK OF AFRICA</title>
+
+<style>
+
+/* ================= RESET ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+
+
+body{
+min-height:100vh;
+background:
+radial-gradient(circle at top left, rgba(0,148,95,0.18), transparent 40%),
+radial-gradient(circle at bottom right, rgba(0,80,60,0.15), transparent 40%),
+linear-gradient(135deg,#f7fffb,#eafbf2,#f2fffa);
+background-attachment:fixed;
+}
+
+
+
+header{
+background:linear-gradient(135deg,#006b4f,#00945f,#00b377);
+padding:35px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+border-bottom-left-radius:35px;
+border-bottom-right-radius:35px;
+}
+
+header h1{
+color:white;
+font-size:42px;
+letter-spacing:2px;
+text-shadow:0 3px 10px rgba(0,0,0,.3);
+}
+
+header p{
+color:#eafff3;
+margin-top:10px;
+font-size:18px;
+}
+
+
+header a{
+display:inline-block;
+margin-top:20px;
+padding:12px 30px;
+background:white;
+color:#006b4f;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+transition:.3s;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+header a:hover{
+background:#dff7ee;
+transform:translateY(-3px);
+}
+
+
+
+.services{
+padding:70px 10%;
+}
+
+.titre{
+text-align:center;
+font-size:40px;
+color:#006b4f;
+margin-bottom:50px;
+}
+
+.titre::after{
+content:"";
+display:block;
+width:90px;
+height:5px;
+background:#00b377;
+margin:15px auto;
+border-radius:10px;
+}
+
+
+
+.grille{
+display:flex;
+flex-direction:column;
+gap:30px;
+max-width:950px;
+margin:auto;
+}
+
+
+.carte{
+display:flex;
+align-items:center;
+gap:25px;
+padding:30px;
+background:rgba(255,255,255,0.85);
+backdrop-filter:blur(10px);
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+border-left:8px solid #00b377;
+transition:.4s;
+cursor:pointer;
+}
+
+.carte:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+
+
+.icone{
+width:90px;
+height:90px;
+border-radius:50%;
+background:linear-gradient(135deg,#006b4f,#00b377);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:45px;
+color:white;
+flex-shrink:0;
+transition:.4s;
+}
+
+.carte:hover .icone{
+transform:rotate(8deg) scale(1.1);
+}
+
+
+.texte{
+flex:1;
+}
+
+.texte h2{
+color:#006b4f;
+margin-bottom:8px;
+font-size:28px;
+}
+
+.texte p{
+color:#555;
+font-size:17px;
+line-height:1.6;
+}
+
+
+
+.retour{
+text-align:center;
+margin-top:50px;
+}
+
+.retour button{
+padding:15px 40px;
+border:none;
+border-radius:30px;
+background:linear-gradient(135deg,#00b377,#00945f);
+color:white;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.retour button:hover{
+transform:scale(1.05);
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>BANK OF AFRICA</h1>
+<p>Nos services bancaires modernes et securises</p>
+
+<a href="Bank.html">Accueil</a>
+
+</header>
+
+<section class="services">
+
+<h2 class="titre">Nos Services</h2>
+
+<div class="grille">
+
+<!-- SERVICE 1 -->
+<div class="carte" onclick="message('Comptable')">
+
+<div class="icone"></div>
+
+<div class="texte">
+<h2>Comptable</h2>
+<p>Gestion des comptes, suivi des operations et consultation des mouvements bancaires.</p>
+</div>
+
+</div>
+
+<!-- SERVICE 2 -->
+<div class="carte" onclick="message('Versement')">
+
+<div class="icone"> </div>
+
+<div class="texte">
+<h2>Versement</h2>
+<p>Effectuez vos depots d'argent rapidement et en toute securite dans nos agences.</p>
+</div>
+
+</div>
+
+<!-- SERVICE 3 -->
+<div class="carte" onclick="message('Caisse')">
+
+<div class="icone"> </div>
+
+<div class="texte">
+<h2>Caisse</h2>
+<p>Retrait, depot et gestion des operations quotidiennes des clients.</p>
+</div>
+
+</div>
+
+<!-- SERVICE 4 -->
+<div class="carte" onclick="message('Virement')">
+
+<div class="icone"></div>
+
+<div class="texte">
+<h2>Virement</h2>
+<p>Envoyez de l'argent vers un autre compte en quelques secondes.</p>
+</div>
+
+</div>
+
+<!-- SERVICE 5 -->
+<div class="carte" onclick="message('Epargne')">
+
+<div class="icone"> </div>
+
+<div class="texte">
+<h2>Epargne</h2>
+<p>Faites fructifier votre argent avec nos solutions d'epargne securisees.</p>
+</div>
+
+</div>
+
+</div>
+
+<!-- BOUTON RETOUR -->
+<div class="retour">
+
+<button onclick="retourAccueil()">
+Retour a l'accueil
+</button>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+© 2026 BANK OF AFRICA - Tous droits réservés.
+
+</footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+function message(service){
+alert("Vous avez sélectionné le service : " + service);
+}
+
+function retourAccueil(){
+window.location.href = "Bank.html";
+}
+
+</script>
+
+</body>
+</html>
