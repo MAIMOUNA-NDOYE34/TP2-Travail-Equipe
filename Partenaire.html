@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Partenaires - BANK OF AFRICA</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+/* BODY */
+body{
+background:linear-gradient(135deg,#eef5ff,#eafaf0,#f7fffb);
+}
+
+/* HEADER */
+header{
+background:linear-gradient(135deg,#006b4f,#00945f);
+padding:30px;
+text-align:center;
+color:white;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+header h1{
+font-size:40px;
+letter-spacing:2px;
+}
+
+header p{
+margin-top:8px;
+color:#eafff3;
+}
+
+/* MENU */
+nav{
+background:#284f46;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:18px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:12px 22px;
+border-radius:30px;
+transition:.3s;
+font-weight:bold;
+}
+
+nav a:hover{
+background:#00b377;
+transform:scale(1.05);
+}
+
+/* HERO */
+.hero{
+height:320px;
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1556740749-887f6717d7e4");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+font-size:55px;
+}
+
+/* PARTENAIRES */
+.zone{
+padding:70px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+/* CARTE PLUS GRANDE */
+.bloc{
+background:white;
+padding:45px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+transition:.4s;
+border-top:6px solid #00945f;
+}
+
+.bloc:hover{
+transform:translateY(-10px) scale(1.03);
+}
+
+/* IMAGE PLUS GRANDE */
+.image{
+width:160px;
+height:160px;
+object-fit:contain;
+margin-bottom:20px;
+}
+
+/* TITRE */
+.bloc h3{
+color:#003b7a;
+margin-bottom:10px;
+font-size:24px;
+}
+
+/* TEXTE */
+.bloc p{
+color:#555;
+font-size:16px;
+line-height:1.6;
+}
+
+/* RETOUR */
+.retour{
+text-align:center;
+margin:50px 0;
+}
+
+.retour button{
+padding:16px 40px;
+background:linear-gradient(135deg,#00945f,#00b377);
+color:white;
+border:none;
+border-radius:40px;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+font-weight:bold;
+}
+
+.retour button:hover{
+transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+background:#284f46;
+color:white;
+text-align:center;
+padding:35px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>BANK OF AFRICA</h1>
+<p>Nos Partenaires Financiers Et Technologiques</p>
+</header>
+
+<nav>
+
+<a href="Bank.html">Accueil</a>
+
+</nav>
+
+<section class="hero">
+<h2>Nos Partenaires</h2>
+</section>
+
+<section class="zone">
+
+
+<div class="bloc">
+<img src="Visa.JPEG" class="image">
+<h3>Visa</h3>
+<p>Leader Mondial Des Paiements Internationaux Securises.</p>
+</div>
+
+
+<div class="bloc">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" class="image">
+<h3>Mastercard</h3>
+<p>Solutions de Paiement Rapides Et Internationales.</p>
+</div>
+
+
+<div class="bloc">
+<img src="Orange.JPEG" class="image">
+<h3>Orange Money</h3>
+<p>Transferts D argent Et Paiements Mobiles En Afrique.</p>
+</div>
+
+<!-- WAVE -->
+<div class="bloc">
+<img src="Wave.JPEG" class="image">
+<h3>Wave</h3>
+<p>Solution Mobile De Transfert D argent Rapide Et Gratuite.</p>
+</div>
+
+<div class="bloc">
+<img src="Western.JPEG" class="image">
+<h3>Western Union</h3>
+<p>Transferts D argent Internationaux Fiables Et Rapides.</p>
+</div>
+
+
+<div class="bloc">
+<img src="Ecobank.Jpeg" class="image">
+<h3>Ecobank</h3>
+<p>Groupe Bancaire Panafricain Present Dans Plusieurs Pays.</p>
+</div>
+
+</section>
+
+<div class="retour">
+
+<button onclick="retour()"> Retour Accueil</button>
+
+</div>
+
+<footer>
+2026 BANK OF AFRICA - Tous droits reserves
+</footer>
+
+<script>
+
+function retour(){
+window.location.href="Bank.html";
+}
+
+</script>
+
+</body>
+</html>

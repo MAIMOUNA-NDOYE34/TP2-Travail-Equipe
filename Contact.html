@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contacts - BANK OF AFRICA</title>
+
+<style>
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+
+body{
+background:linear-gradient(135deg,#eef6ff,#eafaf0,#f7fffb);
+}
+
+
+header{
+background:#006b4f;
+color:white;
+text-align:center;
+padding:30px;
+font-size:28px;
+font-weight:bold;
+letter-spacing:1px;
+}
+
+/* SOUS TITRE */
+.subtitle{
+text-align:center;
+margin-top:10px;
+color:#333;
+font-size:18px;
+}
+
+/* CONTAINER */
+.container{
+max-width:1000px;
+margin:50px auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding:0 20px;
+}
+
+/* CARD */
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.3s;
+border-top:5px solid #00945f;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* TITRE */
+.card h2{
+color:#006b4f;
+margin-bottom:15px;
+font-size:22px;
+}
+
+/* TEXTE */
+.card p{
+color:#555;
+line-height:1.6;
+font-size:16px;
+}
+
+/* CONTACT LINKS */
+.card a{
+display:block;
+margin-top:10px;
+color:#003b7a;
+text-decoration:none;
+font-weight:bold;
+}
+
+.card a:hover{
+color:#00945f;
+}
+
+/* FORMULAIRE */
+form{
+display:flex;
+flex-direction:column;
+gap:12px;
+margin-top:15px;
+}
+
+input, textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:15px;
+}
+
+button{
+padding:12px;
+border:none;
+border-radius:8px;
+background:#00945f;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#00b377;
+}
+
+/* FOOTER */
+footer{
+margin-top:50px;
+background:#284f46;
+color:white;
+text-align:center;
+padding:25px;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+CONTACTS BANK OF AFRICA
+</header>
+
+<div class="subtitle">
+Clients- Partenaires - Assistance -Support
+</div>
+
+<div class="container">
+
+<!-- CLIENTS -->
+<div class="card">
+<h2> Clients</h2>
+<p>Besoin d aide sur vos comptes ou vos operations bancaires.</p>
+
+<a href="tel:+221770000000">  Appeler le service client</a>
+<a href="mailto:client@bankafrica.com"> client@bankafrica.com</a>
+</div>
+
+<!-- PARTENAIRES -->
+<div class="card">
+<h2> Partenaires</h2>
+<p>Contact pour collaboration, entreprises et institutions.</p>
+
+<a href="tel:+221780000000"> Service partenaires</a>
+<a href="mailto:partenaires@bankafrica.com"> partenaires@bankafrica.com</a>
+</div>
+
+<!-- BANQUE -->
+<div class="card">
+<h2> Agence principale</h2>
+<p>BANK OF AFRICA Senegal - Siege principal</p>
+
+<p> Dakar, Senegal</p>
+<a href="https://www.google.com/maps" target="_blank"> Voir sur Google Maps</a>
+</div>
+
+<!-- FORMULAIRE -->
+<div class="card">
+<h2> Envoyer un message</h2>
+
+<form>
+<input type="text" placeholder="Votre nom" required>
+<input type="email" placeholder="Votre email" required>
+<textarea rows="4" placeholder="Votre message..." required></textarea>
+<button type="submit">Envoyer</button>
+</form>
+
+<div style="text-align:center; margin-top:40px;">
+    <a href="Bank.html" style="
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        padding:14px 30px;
+        background:linear-gradient(135deg,#00945f,#006b4f);
+        color:white;
+        text-decoration:none;
+        border-radius:30px;
+        font-weight:bold;
+        box-shadow:0 8px 20px rgba(0,0,0,0.2);
+        transition:0.3s;
+    "
+    onmouseover="this.style.transform='scale(1.05)'"
+    onmouseout="this.style.transform='scale(1)'">
+        Retour a l'accueil
+    </a>
+</div>
+<footer> 
+     2026 BANK OF AFRICA - Tous droits reserves
+</footer>
+
+</body>
+
+</html>
